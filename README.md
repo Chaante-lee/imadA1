@@ -1,8 +1,11 @@
 https://github.com/VCONLINE/imad5112w-assignment-one-Chaante-lee - my repository link
+https://github.com/Chaante-lee/imadA1 my repository link personal
+
 youtube video link
 
 
 report 
+
 the purpose of my app is to help my friend hera decide what to eat at different times in a day. the language i used is kotlin. the app gives uggestions based on the time of the day.
 i Added a TextBox where the user can enter the time of day("Morning,", “Mid-morning”, "Afternoon,", “Mid-afternoon”, "Dinner,").The app then displays the meal suggestion based on the time
 of the day. i Included a "Reset" button that clears the input and the meal suggestions from the TextBox. The app manages input errors, providing constructive feedback if the user enters
@@ -10,6 +13,7 @@ invalid information. I Created a new GitHub repository for your project. Commit 
 
 
 code
+
 package vcmsa.ci.imadassignment1  // name of package
 
 import android.os.Bundle
