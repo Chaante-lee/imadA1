@@ -14,11 +14,70 @@ invalid information. I Created a new GitHub repository for your project. Commit 
 
 code
 
+activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/timeInput"
+        android:layout_width="262dp"
+        android:layout_height="80dp"
+        android:autofillHints="username"
+        android:hint=" Enter time of day"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#888888" />
+
+    <Button
+        android:id="@+id/suggestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:text="Get Meal Suggestion" />
+
+    <TextView
+        android:id="@+id/mealSuggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:text="Reset" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="143dp"
+        app:srcCompat="@drawable/food" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="206dp"
+        android:layout_height="188dp"
+        app:srcCompat="@drawable/cake" />
+</LinearLayout>
+
+MainActivity.kt
 package vcmsa.ci.imadassignment1  // name of package
 
 import android.os.Bundle
 import android.widget.*
-import androidx.appcompat.app.AppCompatActivity//author chatgpt
+import androidx.appcompat.app.AppCompatActivity//author z bulbulia
 
 class MainActivity : AppCompatActivity() {
 
