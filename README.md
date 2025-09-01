@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)  // this links the layout author chaante lee pillay
-//here i declared the variables
+     //here i declared the variables
         //author chaante lee pillay
         val timeInput = findViewById<EditText>(R.id.timeInput)
         val mealSuggestion = findViewById<TextView>(R.id.mealSuggestion)
