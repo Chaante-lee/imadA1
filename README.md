@@ -16,7 +16,7 @@ code
 
 activity_main.xml
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+    <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -70,16 +70,16 @@ activity_main.xml
         android:layout_width="206dp"
         android:layout_height="188dp"
         app:srcCompat="@drawable/cake" />
-</LinearLayout>
+    </LinearLayout>
 
 MainActivity.kt
 package vcmsa.ci.imadassignment1  // name of package
+    
+    import android.os.Bundle
+    import android.widget.*
+    import androidx.appcompat.app.AppCompatActivity//author z bulbulia
 
-import android.os.Bundle
-import android.widget.*
-import androidx.appcompat.app.AppCompatActivity//author z bulbulia
-
-class MainActivity : AppCompatActivity() {
+    class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -90,8 +90,8 @@ class MainActivity : AppCompatActivity() {
         val mealSuggestion = findViewById<TextView>(R.id.mealSuggestion)
         val suggestButton = findViewById<Button>(R.id.suggestButton)
         val resetButton = findViewById<Button>(R.id.resetButton)
-//this button will show meal suggestions when a user types in any of the following times or parts of the day
-//author chaante lee pillay
+    //this button will show meal suggestions when a user types in any of the following times or parts of the day
+    //author chaante lee pillay
         suggestButton.setOnClickListener {
             val input = timeInput.text.toString().trim().lowercase()
             val suggestion = when (input) {
@@ -105,8 +105,8 @@ class MainActivity : AppCompatActivity() {
             }
             mealSuggestion.text = suggestion ?: "Invalid input. Try: Morning, Mid-morning, Afternoon, Mid-afternoon, Dinner, After dinner."
         }
-//this will reset the text view and the edit text box
- //author chaante lee pillay
+    //this will reset the text view and the edit text box
+    //author chaante lee pillay
         resetButton.setOnClickListener {
             timeInput.text.clear()
             mealSuggestion.text = ""
